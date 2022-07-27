@@ -1,8 +1,8 @@
-body {
+lbody {
   background-color: rgb(201, 178, 228);
   font-family: "Lato", sans-serif;
   color: rgb(65, 64, 64);
-  background-image: url("undraw_workout_gcgu.svg");
+  background-image: url("health.png");
   background-repeat: no-repeat;
 }
 
