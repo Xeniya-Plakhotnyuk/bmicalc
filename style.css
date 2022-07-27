@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(201, 178, 228);
+  font-family: "Lato", sans-serif;
+  color: rgb(65, 64, 64);
+  background-image: url("undraw_workout_gcgu.svg");
+  background-repeat: no-repeat;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  max-width: 1080px;
+  background: #fff;
+  width: 480px;
+ 
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 50%;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid purple;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+
+#female,
+#male {
+  cursor: pointer;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.btns {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btns .btn {
+  width: 140px;
+  margin: 0 0.5rem;
+  padding: 0.8rem 0;
+  font-family: inherit;
+  font-size: 1.15rem;
+  border: none;
+  background: rgb(158, 60, 153);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.btns .btn:hover {
+  outline: 0;
+  opacity: 0.9;
+}
+.btns .btn:focus {
+  outline: 0;
+}
+#bmi-usc,
+#clr-btn,
+#calc-btn {
+  display: none;
+}
+
+.bmi-output {
+  display: flex;
+
+  font-family: "Lato", sans-serif;
+  color: rgb(65, 64, 64);
+  flex-direction: column;
+}
+
+#bmi-value {
+  align-self: center;
+  background-color: rgba(62, 248, 171, 0.527);
+  font-size: 30px;
+
+  border-radius: 5px;
+}
+
+#bmi-category {
+  background-color: rgba(62, 248, 171, 0.527);
+
+  border-radius: 5px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(86, 87, 90, 0.438);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.par_footer {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+#par {
+  max-width: 70%;
+  color: rgb(93, 62, 150);
+  font-weight: lighter;
+}

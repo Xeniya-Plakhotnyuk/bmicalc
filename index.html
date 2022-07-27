@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YrBMI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-wrapper" data-aos="fade-down" data-aos-duration="2000">
+        <div class="bmi-contents">
+          <h2 class="head">What is your BMI?</h2>
+
+          <div class="bmi-content" id="bmi-usc">
+            <form
+              name="myForm"
+              action="/action_page.php"
+              onsubmit="validateForm()"
+              method="post"
+              required
+            >
+              <div class="form-group">
+                <p>Age</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="your age..."
+                  id="age1"
+                  name="fname"
+                />
+              </div>
+
+              <div class="form-group col-3">
+                <p>Gender</p>
+                <div>
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                    checked
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+
+              <div class="form-group col-3">
+                <p>Height</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="feet"
+                  placeholder="feet"
+                  name="fname"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inches"
+                  placeholder="inches"
+                  name="fname"
+                />
+              </div>
+
+              <div class="form-group">
+                <p>Weight</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pounds"
+                  placeholder="pounds"
+                  name="fname"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="btns" data-aos="zoom-in-up" data-aos-duration="3000">
+          <button type="button" id="calc-btn-first" class="btn">START</button>
+          <button type="button" id="calc-btn" class="btn">Calculate</button>
+
+          <br />
+          <button type="button" id="clr-btn" class="btn">Clear</button>
+        </div>
+
+        <div
+          class="text"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-delay="2000"
+        >
+          <p id="par">
+            Calculate your Body mass index (BMI). Itis an inexpensive and easy
+            screening method for weight category—underweight, healthy weight,
+            overweight, and obesity. <br />
+            BMI can be a screening tool, but it does not diagnose the body
+            fatness or health of an individual.
+          </p>
+        </div>
+
+        <div class="output">
+          <div class="bmi-output">
+            <h3 id="bmi-value"></h3>
+            <p id="bmi-category"></p>
+            <p id="bmi-gender"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <div id="footer">
+      <p class="par_footer">Developed by Xeniya Zagor</p>
+    </div>
+  </body>
+</html>
