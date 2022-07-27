@@ -1,1 +1,1 @@
-# bmicalc.github.io
+# bmicalc
