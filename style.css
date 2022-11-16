@@ -2,8 +2,8 @@ body {
   background-color: rgb(201, 178, 228);
   font-family: "Lato", sans-serif;
   color: rgb(65, 64, 64);
-/*   background-image: url("https://github.com/XeniyaZ/bmicalc/blob/main/health.png?raw=true");
-  background-repeat: no-repeat; */
+background-image: url("https://github.com/XeniyaZ/bmicalc/blob/main/health.png?raw=true");
+  background-repeat: no-repeat;
 }
 
 .container {
